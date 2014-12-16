@@ -3,18 +3,33 @@
 //   Card
 //   -> Individual style containers
 //
-// -------------------------------------
-//   Template (Haml)
-// -------------------------------------
-//
-// .card
-//   / ...
-//
 // *************************************
 
 .card
-  background: $c-background-invert
-  border-radius: $b-borderRadius
-  box-shadow: $b-boxShadow
+  background: $c-0
   padding: $b-space
   position: relative
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Theme ----- //
+
+.card--0
+  background: $c-0
+
+.card--1
+  background: $c-1
+
+.card--2
+  background: $c-2
+
+.card--3
+  background: $c-3
+
+.card--4
+  background: $c-4
+
+.card--5
+  background: $c-5

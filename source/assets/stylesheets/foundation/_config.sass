@@ -6,40 +6,17 @@
 // *************************************
 
 // -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// ----- Open Sans ----- //
-
-// +font-face('OpenSans', 'OpenSans')
-// +font-face('OpenSans', 'OpenSansBold', bold)
-// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
-
-// -------------------------------------
 //   Colors
 // -------------------------------------
 
 // ----- Palette ----- //
 
-$plum: #4e4e5b
-
-// ----- Base ----- //
-
-$c-background-invert: #fff
-$c-background: #ecf0f1
-$c-border: lighten($plum, 30%)
-$c-highlight: $plum
-$c-subdue: lighten($plum, 40%)
-$c-text-invert: #fff
-$c-text: #444
-
-// ----- Components ----- //
-
-// ...
-
-// ----- Structures ----- //
-
-// ...
+$c-0: #ffffff
+$c-1: #d7d7d7
+$c-2: #acacac
+$c-3: #7d7d7d
+$c-4: #464646
+$c-5: #222222
 
 // -------------------------------------
 //   Base
@@ -47,11 +24,9 @@ $c-text: #444
 
 // ----- Borders & Box Shadow ----- //
 
-$b-borderRadius: 3px
 $b-borderStyle: solid
-$b-borderWidth: 2px
-$b-border: $b-borderWidth $b-borderStyle $c-border
-$b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
+$b-borderWidth: 1px
+$b-border: $b-borderWidth $b-borderStyle $c-5
 
 // ----- Typography ----- //
 
@@ -97,10 +72,3 @@ $g-silent: false
 // Selector
 
 $g-selector: if($g-silent, unquote("%"), unquote("."))
-
-// -------------------------------------
-//   Structures
-// -------------------------------------
-
-// ...
-
