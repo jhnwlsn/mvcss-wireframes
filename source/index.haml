@@ -11,6 +11,7 @@
   .cell
     %h1.tac Sample Project Tagline
     %p.tac This is where the Sample Project's subtagline could go.
+    %p.tac= link_to "Sample Link", "#", class: "btn"
 
 .row.bb
   .cell.mbxl.mtl
@@ -22,8 +23,11 @@
         %p= lorem.paragraph
         %h4= lorem.words(3).capitalize
         %p= lorem.paragraph
-        %p= link_to "Sample Link", "#"
       .g-b.g-b--m--1of3
         .card.ba.bc3.mbm.pbxs
           %h3.tc0= lorem.words(3).capitalize
           %p.tc1= lorem.paragraph
+
+.row.bc2
+  .cell.mbl.mtl
+    %p= link_to "Sample Link", "#", class: 'btn btn--inverse btn--large'
