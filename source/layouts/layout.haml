@@ -8,7 +8,11 @@
     = stylesheet_link_tag 'application'
 
   %body{ class: page_classes }
-    = partial "shared/navs/top"
-    = yield
+
+    = nav_render
+
+    .content{class: nav_content}
+      = yield
+
     = javascript_include_tag  'vendor'
     = javascript_include_tag  'application'
