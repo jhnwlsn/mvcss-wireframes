@@ -1,6 +1,6 @@
 - if type == "ordered"
   %ol
-    = partial "shared/list-items"
+    = partial "shared/list-items", locals: {items: "normal"}
 - elsif type == "unordered"
   %ul
-    = partial "shared/list-items"
+    = partial "shared/list-items", locals: {items: "normal"}
